@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "PingFang-SC";
+  font-weight: 100;
+  src: local("PingFang SC Thin");
+}
+
+@font-face {
+  font-family: "PingFang-SC";
+  font-weight: 300;
+  src: local("PingFang SC Light");
+}
+
+@font-face {
+  font-family: "PingFang-SC";
+  font-weight: 400;
+  src: local("PingFang SC Regular");
+}
+
+@font-face {
+  font-family: "PingFang-SC";
+  font-weight: 500;
+  src: local("PingFang SC Medium");
+}
+
+@font-face {
+  font-family: "PingFang-SC";
+  font-weight: 700;
+  src: local("PingFang SC Semibold");
+}
+
+@font-face {
+  font-family: "PingFang-SC";
+  font-weight: 800;
+  src: local("PingFang SC Heavy");
+}
+
+body {
+  font-family: system, -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", "Microsoft YaHei",
+    "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: system, -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", "Microsoft YaHei",
+    "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+//------------------字体相关配置end------------------
+//------------------flex布局样式---------------------
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.row {
+  flex-direction: row;
+}
+.column {
+  flex-direction: column;
+}
+.start {
+  justify-content: flex-start;
+}
+.end {
+  justify-content: flex-end;
+}
+.space {
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.content-center {
+  justify-content: center;
+}
+.item-center {
+  align-items: center;
+}
+.f-0 {
+  flex: 0 0 auto;
+}
+.f-1 {
+  flex: 1;
+}
+//------------------flex布局样式end------------------
+// html,
+// body {
+//   // height: 100%;
+// }
+
+body {
+  background-color: #f5f5f5;
+  font-size: 12px;
+}
+
+//------主题色rem计算相关与浮动清除end------
+* {
+  font-family: PingFangSC-Regular;
+  outline:none;
+}
+//ios 去掉点击阴影背景
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+p,
+input {
+  padding: 0;
+  margin: 0;
+}
+input,
+select,
+button,
+textarea {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  outline: none !important;
+  border: 0;
+  background: transparent;
+}
+ul,
+li,
+dl,
+ol,
+dt,
+dd {
+  list-style: none;
+}
+img {
+  display: block;
+  border: 0 none;
+}
+
+body,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+iframe {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+dfn,
+em,
+th,
+var,
+i,
+em {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+input,
+select,
+button,
+textarea {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  outline: none !important;
+  border: 0;
+  background: transparent;
+}
+
+a,
+label,
+button,
+input,
+select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input,
+select,
+button {
+  vertical-align: baseline;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  margin: 0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+textarea {
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  overflow: auto;
+  resize: none;
+}
+
+// 解决ios 受益人增加，样式混乱叠加的情况
+.business-plan-detail {
+  ::v-deep .anyi-animation {
+    position: relative;
+  }
+}
+
+.line {
+  & + .anyi-form-item {
+    border-top: 0 none;
+  }
+}
